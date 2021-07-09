@@ -2,10 +2,10 @@
         <div class="container-fluid">
             <div id="footer-top" class="row">
                 <div class="col-12 col-md-8 offset-md-2 text-white karla d-flex justify-content-around align-items-center py-4">
-                    <p class="my-auto">PORTA LEAGUE OF LEGENDS CON TE</p>
-                    <p class="my-auto montserrat">Scarica l'app di League of Legends per continuare a seguire i tuoi amici e le ultime novità del gioco e degli eSport.</p>
-                    <p class="my-auto d-flex">
-                        <img alt="Scarica dall'App Store" class="" style="height: 40px; width: auto" src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-example-preferred.png">
+                    <p class="my-auto px-3">PORTA LEAGUE OF LEGENDS CON TE</p>
+                    <p class="my-auto px-3 montserrat">Scarica l'app di League of Legends per continuare a seguire i tuoi amici e le ultime novità del gioco e degli eSport.</p>
+                    <p class="my-auto px-3 d-flex">
+                        <img alt="Scarica dall'App Store" class="" style="height: 40px; width: auto; border-radius: 7px" src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-example-preferred.png">
                         <img alt="Ottieni su Google Play" class="px-3" style="transform: scale(1.3) translateY(-2px)" src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/harbinger-l10-website/it-it/production/it-it/static/en_get.b89beec4.svg">
                     </p>
                 </div>

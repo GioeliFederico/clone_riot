@@ -216,21 +216,15 @@ aria-label="Fourth navbar example"
             </a>
         </li>
         <li
-        class="nav-item nav-item-custom d-flex align-items-center"
-        style="height: 100%"
-        >
+        class="nav-item nav-item-custom d-flex align-items-center">
         <a class="nav-link karla" href="#">IL GIOCO</a>
         </li>
         <li
-        class="nav-item nav-item-custom d-flex align-items-center"
-        style="height: 100%"
-        >
+        class="nav-item nav-item-custom d-flex align-items-center">
         <a class="nav-link karla" href="{{route('champions')}}">CAMPIONI</a>
         </li>
         <li
-        class="nav-item nav-item-custom dropdown notizie-dropdown d-flex align-items-center"
-        style="height: 100%"
-        >
+        class="nav-item nav-item-custom dropdown notizie-dropdown d-flex align-items-center">
         <a
             class="nav-link karla notizie-dropbtn d-flex align-items-center justify-content-around"
             href="#"
@@ -251,15 +245,11 @@ aria-label="Fourth navbar example"
         </div>
         </li>
         <li
-        class="nav-item nav-item-custom d-flex align-items-center"
-        style="height: 100%"
-        >
+        class="nav-item nav-item-custom d-flex align-items-center">
         <a class="nav-link karla" href="#">NOTE SULLA PATCH</a>
         </li>
         <li
-        class="nav-item nav-item-custom dropdown notizie-dropdown d-flex align-items-center"
-        style="height: 100%"
-        >
+        class="nav-item nav-item-custom dropdown notizie-dropdown d-flex align-items-center">
         <a
             class="nav-link karla notizie-dropbtn d-flex align-items-center justify-content-around"
             href="#"
@@ -272,9 +262,7 @@ aria-label="Fourth navbar example"
         </div>
         </li>
         <li
-        class="nav-item nav-item-custom d-flex align-items-center"
-        style="height: 100%"
-        >
+        class="nav-item nav-item-custom d-flex align-items-center">
         <a
             class="nav-link karla d-flex align-items-center justify-content-around"
             href="#"
@@ -294,9 +282,7 @@ aria-label="Fourth navbar example"
         </a>
         </li>
         <li
-        class="nav-item nav-item-custom d-flex align-items-center"
-        style="height: 100%"
-        >
+        class="nav-item nav-item-custom d-flex align-items-center">
         <a
             class="nav-link karla d-flex align-items-center justify-content-around"
             href="#"
@@ -316,9 +302,7 @@ aria-label="Fourth navbar example"
         </a>
         </li>
         <li
-        class="nav-item nav-item-custom d-flex align-items-center justify-content-around"
-        style="height: 100%"
-        >
+        class="nav-item nav-item-custom d-flex align-items-center justify-content-around">
         <a
             class="nav-link karla d-flex align-items-center justify-content-around"
             href="#"
@@ -338,9 +322,7 @@ aria-label="Fourth navbar example"
         </a>
         </li>
         <li
-        class="nav-item nav-item-custom d-flex align-items-center"
-        style="height: 100%"
-        >
+        class="nav-item nav-item-custom d-flex align-items-center">
         <a
             class="nav-link karla d-flex align-items-center justify-content-around"
             href="#"

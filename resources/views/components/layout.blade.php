@@ -20,7 +20,7 @@
 
       <x-_navbar />
 
-      {{$slot}};
+      {{$slot}}
 
       <x-_footer />
 

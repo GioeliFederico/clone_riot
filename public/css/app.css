@@ -10932,9 +10932,16 @@ body {
 .nav-item-custom {
   transition: 0s ease-in-out;
   padding: 0px 20px;
+  height: 100%;
+  width: 100%;
 }
 .nav-item-custom .nav-link {
+  white-space: nowrap;
   color: white !important;
+}
+
+.nav-item-custom a {
+  width: 100%;
 }
 
 .nav-item-custom:hover {
@@ -10997,7 +11004,7 @@ body {
 }
 
 #footer-top {
-  background-color: #061C25;
+  background-color: #061c25;
 }
 
 #footer-bottom {
@@ -11166,7 +11173,7 @@ body {
 }
 
 #champions-header {
-  width: 100%;
+  width: auto;
   height: 400px;
   padding: 0px;
   padding-top: 200px;
@@ -11174,13 +11181,134 @@ body {
   /*   clip-path: polygon(0 100%, 100% 0%, 100% 0, 0% 100%);
   */
   transition: all 1s ease-in-out;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-animation: 1s ease-in-out 0.5s 1 onLoad forwards;
+          animation: 1s ease-in-out 0.5s 1 onLoad forwards;
 }
 
-#champions-header:hover {
-  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+@-webkit-keyframes onLoad {
+  0% {
+    opacity: 1;
+    overflow: hidden;
+    -webkit-clip-path: polygon(100% 0%, 100% 0%, 100% 0%, 0% 100%, 0% 100%, 0% 100%);
+    clip-path: polygon(100% 0%, 100% 0%, 100% 0%, 0% 100%, 0% 100%, 0% 100%);
+  }
+  10% {
+    overflow: hidden;
+    -webkit-clip-path: polygon(90% 0%, 100% 0%, 100% 10%, 10% 100%, 0% 100%, 0% 90%);
+    clip-path: polygon(90% 0%, 100% 0%, 100% 10%, 10% 100%, 0% 100%, 0% 90%);
+  }
+  20% {
+    overflow: hidden;
+    -webkit-clip-path: polygon(80% 0%, 100% 0%, 100% 20%, 20% 100%, 0% 100%, 0% 80%);
+    clip-path: polygon(80% 0%, 100% 0%, 100% 20%, 20% 100%, 0% 100%, 0% 80%);
+  }
+  30% {
+    overflow: hidden;
+    -webkit-clip-path: polygon(70% 0%, 100% 0%, 100% 30%, 30% 100%, 0% 100%, 0% 70%);
+    clip-path: polygon(70% 0%, 100% 0%, 100% 30%, 30% 100%, 0% 100%, 0% 70%);
+  }
+  40% {
+    overflow: hidden;
+    -webkit-clip-path: polygon(60% 0%, 100% 0%, 100% 40%, 40% 100%, 0% 100%, 0% 60%);
+    clip-path: polygon(60% 0%, 100% 0%, 100% 40%, 40% 100%, 0% 100%, 0% 60%);
+  }
+  50% {
+    overflow: hidden;
+    -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 50%, 50% 100%, 0% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 0%, 100% 50%, 50% 100%, 0% 100%, 0% 50%);
+  }
+  60% {
+    overflow: hidden;
+    -webkit-clip-path: polygon(40% 0%, 100% 0%, 100% 60%, 60% 100%, 0% 100%, 0% 40%);
+    clip-path: polygon(40% 0%, 100% 0%, 100% 60%, 60% 100%, 0% 100%, 0% 40%);
+  }
+  70% {
+    overflow: hidden;
+    -webkit-clip-path: polygon(30% 0%, 100% 0%, 100% 70%, 70% 100%, 0% 100%, 0% 30%);
+    clip-path: polygon(30% 0%, 100% 0%, 100% 70%, 70% 100%, 0% 100%, 0% 30%);
+  }
+  80% {
+    overflow: hidden;
+    -webkit-clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 20%);
+    clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 20%);
+  }
+  90% {
+    overflow: hidden;
+    -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%);
+    clip-path: polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%);
+  }
+  100% {
+    opacity: 1;
+    overflow: hidden;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 0%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 0%);
+  }
 }
 
+@keyframes onLoad {
+  0% {
+    opacity: 1;
+    overflow: hidden;
+    -webkit-clip-path: polygon(100% 0%, 100% 0%, 100% 0%, 0% 100%, 0% 100%, 0% 100%);
+    clip-path: polygon(100% 0%, 100% 0%, 100% 0%, 0% 100%, 0% 100%, 0% 100%);
+  }
+  10% {
+    overflow: hidden;
+    -webkit-clip-path: polygon(90% 0%, 100% 0%, 100% 10%, 10% 100%, 0% 100%, 0% 90%);
+    clip-path: polygon(90% 0%, 100% 0%, 100% 10%, 10% 100%, 0% 100%, 0% 90%);
+  }
+  20% {
+    overflow: hidden;
+    -webkit-clip-path: polygon(80% 0%, 100% 0%, 100% 20%, 20% 100%, 0% 100%, 0% 80%);
+    clip-path: polygon(80% 0%, 100% 0%, 100% 20%, 20% 100%, 0% 100%, 0% 80%);
+  }
+  30% {
+    overflow: hidden;
+    -webkit-clip-path: polygon(70% 0%, 100% 0%, 100% 30%, 30% 100%, 0% 100%, 0% 70%);
+    clip-path: polygon(70% 0%, 100% 0%, 100% 30%, 30% 100%, 0% 100%, 0% 70%);
+  }
+  40% {
+    overflow: hidden;
+    -webkit-clip-path: polygon(60% 0%, 100% 0%, 100% 40%, 40% 100%, 0% 100%, 0% 60%);
+    clip-path: polygon(60% 0%, 100% 0%, 100% 40%, 40% 100%, 0% 100%, 0% 60%);
+  }
+  50% {
+    overflow: hidden;
+    -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 50%, 50% 100%, 0% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 0%, 100% 50%, 50% 100%, 0% 100%, 0% 50%);
+  }
+  60% {
+    overflow: hidden;
+    -webkit-clip-path: polygon(40% 0%, 100% 0%, 100% 60%, 60% 100%, 0% 100%, 0% 40%);
+    clip-path: polygon(40% 0%, 100% 0%, 100% 60%, 60% 100%, 0% 100%, 0% 40%);
+  }
+  70% {
+    overflow: hidden;
+    -webkit-clip-path: polygon(30% 0%, 100% 0%, 100% 70%, 70% 100%, 0% 100%, 0% 30%);
+    clip-path: polygon(30% 0%, 100% 0%, 100% 70%, 70% 100%, 0% 100%, 0% 30%);
+  }
+  80% {
+    overflow: hidden;
+    -webkit-clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 20%);
+    clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 20%);
+  }
+  90% {
+    overflow: hidden;
+    -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%);
+    clip-path: polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%);
+  }
+  100% {
+    opacity: 1;
+    overflow: hidden;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 0%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 0%);
+  }
+}
+/* #champions-header:hover {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+} */
 #champions-header h1, #champions-header .h1 {
   font-size: 5rem;
   font-style: italic;
@@ -12354,10 +12482,30 @@ body {
   z-index: 1010;
 }
 
-.role-svg-point {
+.role-svg-line {
+  height: 0px !important;
   position: absolute;
-  bottom: -5px;
+  transform: translateX(0.6px);
+  bottom: 0px;
   z-index: 1010;
+  transition: all 0.25s ease-in;
+}
+
+.role-svg-point {
+  border: 1px solid transparent;
+  position: absolute;
+  bottom: -12px;
+  z-index: 1010;
+}
+
+.role-svg-point-border {
+  position: absolute;
+  bottom: -12px;
+  z-index: 1020;
+}
+.role-svg-point-border path {
+  transition: all 0.25s ease-in-out;
+  d: path(" M  11.999999999999998   1  A  11 11 0 0 0 11.999999999999998 1");
 }
 
 .role-item:hover {
@@ -12382,6 +12530,12 @@ body {
     fill: var(--accent-color) !important;
     transform: scale(1.5) translateY(-28px) !important;
 } */
+.role-item.active {
+  /* .role-svg-point {
+      border: 1px solid var(--accent-color);
+      border-radius: 50%;
+  } */
+}
 .role-item.active .role-svg-border {
   fill: var(--accent-color) !important;
   transform: scale(1.5) translateY(-28px) !important;
@@ -12390,6 +12544,57 @@ body {
   fill: black;
   transform: scale(1.3) translateY(-20px) !important;
 }
+.role-item.active .role-svg-line {
+  height: 25px !important;
+}
 .role-item.active .role-svg-point circle {
-  fill: black;
+  fill: var(--accent-color);
+  r: 6px;
+}
+.role-item.active .role-svg-point-border path {
+  -webkit-animation: circle-loading 2s linear forwards;
+          animation: circle-loading 2s linear forwards;
+  /* d: path(' M  11.999999999999998   1  A  11 11 0 1 1 11.616105536272489 1.0067009027899463') !important; */
+}
+
+@-webkit-keyframes circle-loading {
+  0% {
+    d: path(" M 23 12 A 11 11 0 0 1 18 22") !important;
+  }
+  20% {
+    d: path(" M 23 12 A 11 11 0 0 1 7 22") !important;
+  }
+  40% {
+    d: path(" M 23 12 A 11 11 0 0 1 1 12") !important;
+  }
+  60% {
+    d: path(" M 23 12 A 11 11 0 1 1 6 2") !important;
+  }
+  80% {
+    d: path(" M 23 12 A 11 11 0 1 1 18 2") !important;
+  }
+  100% {
+    d: path(" M  11.999999999999998   1  A  11 11 0 1 1 11.616105536272489 1.0067009027899463") !important;
+  }
+}
+
+@keyframes circle-loading {
+  0% {
+    d: path(" M 23 12 A 11 11 0 0 1 18 22") !important;
+  }
+  20% {
+    d: path(" M 23 12 A 11 11 0 0 1 7 22") !important;
+  }
+  40% {
+    d: path(" M 23 12 A 11 11 0 0 1 1 12") !important;
+  }
+  60% {
+    d: path(" M 23 12 A 11 11 0 1 1 6 2") !important;
+  }
+  80% {
+    d: path(" M 23 12 A 11 11 0 1 1 18 2") !important;
+  }
+  100% {
+    d: path(" M  11.999999999999998   1  A  11 11 0 1 1 11.616105536272489 1.0067009027899463") !important;
+  }
 }
